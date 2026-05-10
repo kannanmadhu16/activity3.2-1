@@ -51,3 +51,10 @@ jobs:
    
     - name: Terraform Plan
       run: terraform plan
+
+    - name: Checkov
+      uses: bridgecrewio/checkov-action@master
+      with:
+        framework: terraform
+        directory: .
+        skip_check: CKV2_AWS_62,CKV_AWS_144
