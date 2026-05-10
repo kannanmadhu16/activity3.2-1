@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "sctp-ce12-tfstate-bucket " # Change this
+    bucket = "sctp-ce12-tfstate-bucket" # Change this
     key    = "madhu-activity3.l2-s3"     # Change this
     region = "ap-southeast-1"
   }
